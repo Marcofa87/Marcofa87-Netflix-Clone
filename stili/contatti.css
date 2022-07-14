@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #181818;
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  ul {
+    position: relative;
+    padding: 0;
+    list-style: none;
+  }
+
+  .entrata {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+    z-index: 5;
+  }
+  
+  .entrata #accountlog {
+    background: #fff;
+    padding: 25px;
+    border: 2px solid black;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #181818;
+  }
+  
+  .entrata #accountlog .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px red solid;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    line-height: 15px;
+    text-decoration: none;
+    color: #fff;
+  }
+  #accountlog h2 {
+    margin: 0 0 20px;
+  }
+  
+  #accountlog ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #accountlog ul li {
+    padding: 10px 0;
+  }
+  
+  #accountlog ul li * {
+    display: block;
+  }
+  
+  #accountlog ul li a {
+    color: white;
+    letter-spacing: 0.1em;
+  }
+  
+  #accountlog label {
+    font-size: 1.2em;
+    padding-bottom: 5px;
+  }
+  
+  #accountlog input {
+    width: 100%;
+    font-size: 1.3em;
+    padding: 10px;
+    border: solid 2px #aaa;
+  }
+  
+  #accountlog .errore {
+    border-color: red;
+    background: #ffa1a1;
+  }
+
+  #accountlog .corretto {
+    border-color: green;
+  }
+
+  #accountlog #check {
+      float: left;
+  }
+  
+  #accountlog button {
+    width: 200px;
+    margin: 20px auto 0;
+    padding: 10px;
+    border: solid 3px green;
+    background: #e50914;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  #accountlog button a{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  #accountlog button:hover {
+    background: rgb(189, 0, 0);
+    color: #fff;
+  }
+  
+  #accountlog ul li span {
+    color: red;
+  }

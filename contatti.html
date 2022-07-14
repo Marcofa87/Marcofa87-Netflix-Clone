@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+    <link rel="stylesheet" href="stili/contatti.css">
+    <script src="script/contatti.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <section class="entrata">
+    <div id="accountlog">
+      <a href="indexnetflix.html" class="close">x</a>
+      <h2>Lasciaci i tuoi contatti</h2>
+
+      <form action="paginaLogin.jsp" method="post" id="commentForm">
+        <ul>
+          <li>
+            <label for="text">Nome</label>
+            <input type="text" id="nome" />
+            <span></span>
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="text" id="e-mail" />
+            <span></span>
+          </li>
+          <li>
+            <label for="phone">Inserisci il tuo numero di cellulare:</label>
+            <input type="tel" id="phone" name="phone">
+            <span></span>
+          </li>
+          <li>
+            <label for="textarea">Inserisci qui un commento</label>
+            <input type="textarea" id="textarea" rows="35" cols="43">
+            <span></span>
+          </li>
+          <li>
+            <label type="checkbox">Ho Preso visione del regolamento</label>
+            <input type="checkbox" id="check" />
+          </li>
+          <li>
+            <button>Invia</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,584 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: #181818;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+/*Header*/
+
+header {
+  background-color: rgba(255, 255, 255, 0.774);
+  height: 80px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header .logo {
+  width: 120px;
+  height: 50px;
+  float: left;
+  margin: 5px;
+}
+/*Navbar*/
+
+nav {
+  float: left;
+  margin: 15px 20px;
+  width: 45%;
+  float: right;
+}
+
+nav ul {
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+  margin: 0;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  width: 32%;
+  height: 40px;
+  margin-right: 3px;
+}
+
+nav ul li a {
+  color: #181818;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  line-height: 28px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: 1s;
+  border-radius: 5px;
+  border: 1px solid #181818;
+}
+
+nav ul li a:hover {
+  font-weight: 900;
+  text-decoration: underline;
+  background-color: #181818;
+  color: #fff;
+}
+
+/*Slider Centrale*/
+
+.rslides {
+    position: relative;
+    list-style: none;
+    width: 60%;
+    padding: 0;
+    border: 2px solid white;
+    overflow: hidden;
+    height: 300px;
+    margin: 50px auto;
+  }
+  
+  .rslides li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 5px;
+  }
+  
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+  }
+  
+  .rslides li img {
+    display: block;
+    float: left;
+    width: 100%;
+    border: 0;
+    height: 300px;
+  }
+  
+  
+  
+
+/*Div immagini*/
+
+.palinsesto {
+  margin-top: 50px;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.palinsesto .titoli {
+  overflow: auto;
+  position: absolute;
+  top: -30px;
+  display: block;
+}
+
+.palinsesto .titoli h2 {
+  font-size: 3em;
+  text-align: left;
+  color: #d24646;
+}
+
+.palinsesto ul {
+  overflow: auto;
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.palinsesto ul li {
+    list-style: none;
+    float: left;
+    margin: 60px auto;
+    max-height: 100%;
+    transition: 1s;
+    width: 24%;
+    margin-right: 10px;
+    border: 2px solid #d24646;
+}
+
+
+.palinsesto ul li:hover {
+  transform: scale(1.1);
+}
+
+.palinsesto ul li img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.palinsesto ul li img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*Video Kobra Equalizer*/
+
+.videostart video {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/*aggiungere lista classi vagone*/
+
+.actualSlider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.nextSlider {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+/*Sinossi*/
+
+.sinox {
+  position: relative;
+}
+
+.sinossi {
+  position: absolute;
+  top: 100%;
+  color: white;
+  left: 10px;
+  transition: 0.6s;
+  opacity: 0;
+  margin-top: -40px;
+}
+
+.sinossi h4 {
+  margin: 0;
+  color: white;
+  font-size: 1.2em;
+}
+
+.sinossi p {
+  margin-top: 18px;
+  font-size: 0.7em;
+}
+
+.sinox:hover .sinossi {
+  opacity: 1;
+  max-height: 100px;
+}
+
+/*Frecce*/
+
+.frecce {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  width: 60px;
+  height: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.frecce img {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.frecciasinistra {
+  cursor: pointer;
+  position: absolute;
+  left: 1%;
+}
+
+.frecciadestra {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+}
+
+/*Login*/
+
+.entrata {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 5;
+}
+
+.entrata #login {
+  background: #fff;
+  padding: 25px;
+  border: 2px solid black;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #181818;
+}
+
+.entrata #login .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px red solid;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5em;
+  line-height: 15px;
+}
+#login h2 {
+  margin: 0 0 20px;
+}
+
+#login ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#login ul li {
+  padding: 10px 0;
+}
+
+#login ul li * {
+  display: block;
+}
+
+#login ul li a {
+  color: white;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+#login ul li a:hover {
+  text-decoration: underline;
+  color: #d24646;
+}
+
+#login label {
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+
+#login input {
+  width: 100%;
+  font-size: 1.3em;
+  padding: 10px;
+  border: solid 2px #aaa;
+}
+
+#login .errore {
+  border-color: red;
+  background: #ffa1a1;
+}
+
+#login button {
+  width: 200px;
+  margin: 20px auto 0;
+  padding: 10px;
+  border: solid 3px green;
+  background: #e50914;
+  font-size: 1.1em;
+  color: green;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#login button:hover {
+  background: rgb(189, 0, 0);
+  color: #fff;
+}
+
+#login ul li span {
+  color: red;
+}
+
+/*Contatti */
+
+
+/*Kobra Kai*/
+
+#kobra {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 12;
+  overflow: auto;
+}
+
+#kobra .telefilm .imgkobra {
+  max-width: 33%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #181818;
+  border: 5px solid white;
+  max-height: 100%;
+}
+
+#kobra .telefilm img {
+  max-width: 100%;
+  display: block;
+}
+
+#kobra .telefilm .close {
+  position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: blue;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 35px;
+}
+
+#kobra .play img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+#kobra #puntate {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 33%;
+}
+
+#kobra #puntate .primapuntata {
+  margin-left: 50px;
+}
+#kobra h2,
+.primapuntata {
+  margin-left: 30px;
+  width: 60%;
+}
+
+#kobra .primapuntata {
+  float: left;
+}
+
+#kobra .primapuntata li {
+  margin: 10px;
+  width: 350px;
+}
+
+#kobra .primapuntata li:first-child {
+  height: 200px;
+  width: 350px;
+}
+
+#kobra .primapuntata .watch {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+#kobra .primapuntata .press:hover ~ .watch{
+  opacity: 1;
+}
+
+
+
+#kobra .primapuntata li:nth-child(3) {
+  font-size: 1.8em;
+  font-family: 'Lato', sans-serif;
+  color: #d24646;
+}
+
+/*Equalizer*/
+
+#equa {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 12;
+  overflow: auto;
+}
+
+#equa .equalizerfilm {
+  max-width: 33%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #181818;
+  overflow: visible;
+}
+
+#equa .equalizerfilm img {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+#equa .equalizerfilm .close {
+  position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: blue;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 35px;
+}
+
+
+
+.sinossijavascript {
+  position: absolute;
+  top: 100%;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+
+.sinossijavascript ul li {
+  margin: 10px;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+  color: #d24646;
+}
+
+/*Icone Social*/
+
+
+footer {
+  background-color: rgba(255, 255, 255, 0.774);
+  height: 100px;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+footer #social {
+  float: right;
+  margin-top: 45px;
+  margin-right: 20px;
+}
+
+footer #social a {
+  display: inline-block;
+}
+
+#lab {
+  float: left;
+  
+}
+
+#lab h2 {
+  float: right;
+  margin-top: 50px;
+  margin-left: 20px;
+  transform: translateY(-50%);
+  color: #181818;
+  font-size: 1.8em;
+}
+
+
+footer #lab .labtv {
+  width: 100px;
+  height: 100px;
+}

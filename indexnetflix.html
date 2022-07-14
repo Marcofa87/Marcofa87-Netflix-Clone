@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stili/indexnetflix.css" />
+  <script src="script/indexnetflix.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="script/responsiveslides.min.js"></script>
+  <script src="script/funzioni.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+  <title>LabTv</title>
+</head>
+
+<body>
+
+  <!--Barra di Navigazione-->
+
+
+  <header>
+    <div id="logo">
+      <img src="img/logo-tipo.png" alt="Logo Lab Tv" class="logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" id="log">Login</a></li>
+        <li><a href="contatti.html" id="contacts">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Slider Principale-->
+  
+    <ul class="rslides">
+      <li><img src="img/casa-di-carta.jpeg" alt="casa-di-carta" /></li>
+      <li><img src="img/Cellular-Doppio-Lato-Originale-Film-Poster.jpeg" alt="cellular" /></li>
+      <li><img src="img/The-Rundown-Originale-Film-Poster.jpeg" alt="rundown" /></li>
+      <li><img src="img/locandine-film-lumiere_1020x680.webp" alt="lumiere"></li>
+    </ul>
+  <!--Catalogo-->
+
+  <section>
+
+    <!--Primo Slider-->
+
+    <div class="palinsesto primafila">
+      <div class="titoli">
+        <h2>Novità</h2>
+      </div>
+
+      <!--Frecce-->
+
+
+      <div class="frecce frecciasinistra">
+        <img src="img/arrow_left.png" alt="freccia-sinistra" />
+      </div>
+      <div class="frecce frecciadestra">
+        <img src="img/arrow_right.png" alt="freccia-destra" />
+      </div>
+
+      <!--Slider-->
+
+
+      <ul>
+        <div class="primovagone actualSlider ">
+          <li class="sinox">
+            <a href="#"><img src="img/tattiche.jpeg" alt="tattiche d'amore" /> </a>
+            <div class="sinossi">
+              <h4>Tattiche d'amore</h4>
+              <p>Un pubblicitario e una stilista blogger non credono nell'amore...</p>
+            </div>
+          </li>
+          <li class="sinox">
+            <a href="#" id="kobrakai" class="videostart"><video src="img/official-cobra-kai-trailer-the-karate-kid-saga-continues_yuNS8UKg.mp4" muted controls></video><img src="img/kobra-kai.jpeg" alt="kobra-kai" /></a>
+            <div class="sinossi">
+              <h4>Kobrai Kai</h4>
+              <p>Sono passati più di 30 anni dopo gli eventi narrati dal primo film della serie Karate Kid...</p>
+            </div>
+          </li>
+          <li class="sinox">
+            <a href="#" id="equavid" class="videostart"><video src="img/the-equalizer-2-di-solito-do-la-possibilita-di-rimediare-ma-non-stasera_Tel7mEJq.mp4" muted controls></video><img src="img/equalizer.jpeg" alt="equalizer" id="equalizer"/></a>
+            <div class="sinossi">
+              <h4>Equalizer</h4>
+              <p>Robert McCall, agente della CIA in pensione, è costretto a tornare in azione per...</p>
+            </div>
+          </li>
+          <li class="sinox">
+            <a href="#"><img src="img/casadicarta.jpeg" alt="casa-di-carta" /></a>
+            <div class="sinossi">
+              <h4>La Casa di carta</h4>
+              <p>Un criminale ha un piano per realizzare la più grande rapina della storia, da realizzare alla Zecca Reale di Spagna....</p>
+            </div>
+          </li>
+        </div>
+        <div class="secondovagone nextSlider">
+            <li class="sinox">
+              <a href="#"><img src="img/bad-boys.jpeg" alt="bad-boys" /></a>
+              <div class="sinossi">
+                <h4>Bad Boys</h4>
+                <p>Due poliziotti devono recuperare 100 milioni di dollari di eroina prima della chiusura del dipartimento...</p>
+              </div>
+            </li>
+            <li>
+              <a href="#"><img src="img/equalizer.jpeg" alt="equalizer" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/un-padre.jpeg" alt="un-padre" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/tyler-drake.jpeg" alt="tyler-drake" /></a>
+            </li>
+        </div>
+        <div class="terzovagone">
+          <li>
+            <a href="#"></a><img src="img/adamproject.jpeg" alt="adam-project" />
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="img/rambo.jpeg" alt="rambo" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/breaking-bad.jpeg" alt="breaking-bad" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/granchio-nero.jpeg" alt="granchio-nero" /></a>
+          </li>
+          </div>
+        </ul>
+    </div>
+
+    <!--Secondo Slider-->
+
+    <div class="palinsesto primafila">
+      <div class="titoli">
+        <h2>Classici</h2>
+      </div>
+
+      <!--Frecce-->
+
+
+      <div class="frecce frecciasinistra">
+        <img src="img/arrow_left.png" alt="freccia-sinistra" />
+      </div>
+      <div class="frecce frecciadestra">
+        <img src="img/arrow_right.png" alt="frecciadestra" />
+      </div>
+
+      <!--Slider-->
+
+
+      <ul>
+        <div class="primovagone actualSlider ">
+          <li>
+            <a href="#"><img src="img/tattiche.jpeg" alt="tattiche" /> </a>
+          </li>
+          <li>
+            <a href="#"><img src="img/kobra-kai.jpeg" alt="kobra-kai" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/equalizer.jpeg" alt="equalizer" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/casadicarta.jpeg" alt="casa-di-carta" /></a>
+          </li>
+        </div>
+        <div class="secondovagone nextSlider">
+            <li>
+              <a href="#"><img src="img/bad-boys.jpeg" alt="bad-boys" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/equalizer.jpeg" alt="equalizer" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/un-padre.jpeg" alt="un-padre" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/tyler-drake.jpeg" alt="tyler-drake" /></a>
+            </li>
+        </div>
+        <div class="terzovagone">
+            <li>
+              <a href="#"></a><img src="img/adamproject.jpeg" alt="adam-project" />
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="img/casa-di-carta.jpeg" alt="casa-di-carta" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/breaking-bad.jpeg" alt="breaking-bad" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/granchio-nero.jpeg" alt="granchio-nero" /></a>
+            </li>
+          </div>
+        </ul>
+    </div>
+
+
+    <!--Terzo Slider-->
+
+
+
+    <div class="palinsesto primafila">
+      <div class="titoli">
+        <h2>Serie Tv</h2>
+      </div>
+
+      <!--Frecce-->
+
+
+      <div class="frecce frecciasinistra">
+        <img src="img/arrow_left.png" alt="freccia-sinistra" />
+      </div>
+      <div class="frecce frecciadestra">
+        <img src="img/arrow_right.png" alt="freccia-destra" />
+      </div>
+
+      <!--Slider-->
+
+
+      <ul>
+        <div class="primovagone actualSlider ">
+          <li>
+            <a href="#"><img src="img/tattiche.jpeg" alt="tattiche" /> </a>
+          </li>
+          <li>
+            <a href="#"><img src="img/kobra-kai.jpeg" alt="kobra-kai" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/equalizer.jpeg" alt="equalizer" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/casadicarta.jpeg" alt="casa-di-carta" /></a>
+          </li>
+        </div>
+        <div class="secondovagone nextSlider">
+            <li>
+              <a href="#"><img src="img/bad-boys.jpeg" alt="bad-boys" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/equalizer.jpeg" alt="equalizer" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/un-padre.jpeg" alt="un-padre" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/tyler-drake.jpeg" alt="tyler-drake" /></a>
+            </li>
+        </div>
+        <div class="terzovagone">
+            <li>
+              <a href="#"></a><img src="img/adamproject.jpeg" alt="adam-project" />
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="img/adamproject.jpeg" alt="adam-project" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/adamproject.jpeg" alt="adam-project" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/adamproject.jpeg" alt="adam-project" /></a>
+            </li>
+          </div>
+        </ul>
+    </div>
+  </section>
+
+  <!--Login-->
+
+
+  <section class="entrata">
+    <div id="login">
+      <span class="close">x</span>
+      <h2>Entra nell'area riservata</h2>
+
+      <form action="paginaAccount.jsp" method="post" id="commentForm">
+        <ul>
+          <li>
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+            <span></span>
+          </li>
+          <li>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" />
+            <span></span>
+          </li>
+          <li>
+            <button>Accedi</button>
+          </li>
+          <li><a href="#">Ricorda Password</a></li>
+          <li><a href="creazioneaccount.html">Crea nuovo account</a></li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
+  <!--Kobra Kai-->
+
+
+    <div id="kobra">
+      <div class="telefilm film">
+        <div class="imgkobra">
+        <img src="img/Cobra-Kai-cover.jpeg" alt="kobra-kai-cover">
+        <span class="close">X</span>
+      </div>
+      <div class="play">
+        <img src="img/arrow_right.png" alt="freccia-play">
+      </div>
+        <div id="puntate">
+          <h2>Stagione 1</h2>
+          <ul class="primapuntata">
+            <li class="press"><img src="img/prima.jpeg" alt="Primo episodio"></li>
+            <li class="watch"><img src="img/play-button (1).png" alt="guarda"></li>
+            <li>1. Il più degenerato di tutti
+             </li>
+            <li> Johnny beve molto e vive all'ombra del successo del suo ex rivale Daniel, ma quando tocca il fondo decide di riaprire il dojo di karate Cobra Kai.</li>
+          </ul>
+          <ul class="primapuntata">
+            <li class="press"><img src="img/seconda.jpeg" alt="Secondo-Espisodio"></li>
+            <li class="watch"><img src="img/play-button (1).png" alt="guarda"></li>
+            <li>2. Colpisco per primo
+             </li>
+            <li> Daniel vede il nuovo dojo Cobra Kai e ne rimane sconvolto. Più tardi apprende da Kyler, il ragazzo per cui Sam ha una cotta, che è avvenuto un violento litigio.</li>
+          </ul>
+          <ul class="primapuntata">
+            <li class="press"><img src="img/terza.jpeg" alt="Terzo-Episodio"></li>
+            <li class="watch"><img src="img/play-button (1).png" alt="guarda"></li>
+            <li>3. Esqueleto
+             </li>
+            <li> Daniel si offre come accompagnatore per il ballo di Halloween in modo da poter tenere d'occhio Sam. Johnny cerca di reclutare più studenti per la sua nuova attività.</li>
+          </ul>
+          <ul class="primapuntata">
+            <li class="press"><img src="img/quarta.jpeg" alt="Quarto Episodio"></li>
+            <li class="watch"><img src="img/play-button (1).png" alt="guarda"></li>
+            <li> 4. Il Cobra Kai non muore mai
+             </li>
+             
+            <li> Un cartellone pubblicitario di Daniel è deturpato. La madre di Miguel vieta al figlio di continuare le lezioni di karate. Johnny scopre che Robby ha marinato la scuola.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Equalizer-->
+
+
+    <div id="equa">
+      <div class="equalizerfilm">
+        <div class="equalizerimg">
+          <img src="img/the-equalizer-2-senza-perdono-recensione-01-.jpeg" alt="Film Equalizer">
+          <span class ="close">X</span>
+        </div>
+      <div class="sinossijavascript">
+        <ul>
+          <li>Trama: <br>Robert McCall, agente della CIA in pensione, è costretto a tornare in azione per aiutare una prostituta, Teri, che è stata presa di mira dalla mafia russa. L'uomo inoltre, deve affrontare alcuni poliziotti corrotti intenzionati a eliminarlo.</li>
+          <li>Regia: Antoine Fuqua</li>
+          <li><ul>
+            <li>Denzel Washington: Robert McCall</li>
+            <li>Pedro Pascal: Dave York</li>
+            <li>Ashton Sanders: Miles Whittaker</li>
+            <li>Bill Pullman: Brian Plummer</li>
+          </ul></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+<!--Icone Social-->
+
+
+  <footer>
+    <div id="social">
+        <a href="#"><img src="img/facebook-(1).png" alt="Logo Facebook" /></a>
+        <a href="#"><img src="img/instagram-(1).png" alt="Logo Instagram" /></a>
+        <a href="#"><img src="img/youtube-(1).png" alt="logo youtube" /></a>
+          </div>
+        <div id="lab">
+          <a href="https://www.labfortraining.it"><img src="img/logo.png" alt="logo labtv" class="labtv" /></a>
+          <h2>LabTv</h2>
+        </div>
+    
+  </footer>
+</body>
+
+</html>
